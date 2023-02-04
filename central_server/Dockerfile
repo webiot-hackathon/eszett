@@ -1,6 +1,9 @@
 FROM denoland/deno:1.30.2
 
-COPY src/* /usr/src/eszett/
+EXPOSE 1993
 
-ENTRYPOINT ["/tini" "--" "docker-entrypoint.sh"]
-CMD ["run" "/user/src/eszett/server.ts"]
+COPY . /usr/src/eszett/
+WORKDIR /usr/src/eszett
+RUN deno install -qAf --unstable https://deno.land/x/denon/denon.ts
+
+CMD ["denon", "run", "src/server.ts"]
