@@ -1,8 +1,8 @@
-import { requestI2CAccess } from "./node_modules/node-web-i2c/index.js";
+import { requestI2CAccess } from "node-web-i2c/index.js.js";
 import GROVEACCELEROMETER from "@chirimen/grove-accelerometer";
 const sleep = msec => new Promise(resolve => setTimeout(resolve, msec));
 import nodeWebSocketLib from "websocket"; // https://www.npmjs.com/package/websocket
-import { RelayServer } from "./RelayServer.js";
+import { RelayServer } from "./RelayServer.js.js";
 
 var channel
 var ary = [0, 0, 0];
