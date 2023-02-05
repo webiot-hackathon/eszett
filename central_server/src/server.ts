@@ -74,18 +74,18 @@ export const globalState: {
   intersectionSensors: {
     intersectionSensors: [
       {
-        macAddress: "",
+        macAddress: "b8:27:eb:40:ae:df",
         potisionCordinate: [0, 0],
         rssiData: new Map([]),
       },
       {
         macAddress: "",
-        potisionCordinate: [],
+        potisionCordinate: [0, 150],
         rssiData: new Map([]),
       },
       {
         macAddress: "",
-        potisionCordinate: [],
+        potisionCordinate: [150, 0],
         rssiData: new Map([]),
       },
     ],
