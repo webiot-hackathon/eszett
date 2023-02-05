@@ -9,9 +9,9 @@ SVG.on(document, 'DOMContentLoaded', function() {
 
     var request = new XMLHttpRequest();
     var url  = "";
-    while (true) {
-        request.open('GET', url, true);
-    }
+    // while (true) {
+    //     request.open('GET', url, true);
+    // }
     
 });
 
