@@ -6,7 +6,7 @@ export class WebSocket {
   public async websocketGet(): Promise<void> {
     // まずRelayServierオブジェクトを作成
     let relay = RelayServer(
-      "chirimentest",
+      "chirimen",
       "eszett",
       nodeWebSocketLib,
       "https://chirimen.org"

@@ -1,10 +1,12 @@
+// import Fastify from "fastify";
 import {
   CarPositionCoorinateListDto,
   CarSensorListDto,
-  IntersectionSensorDto,
   IntersectionSensorListDto,
 } from "./repository";
 import { WebSocket } from "./websocket";
+
+// const fastify = Fastify({ logger: true });
 
 //mock
 const mockCarSensors: CarSensorListDto = {
@@ -167,6 +169,24 @@ function calcPotisionCordinate(carAddress: string): void {
   });
 }
 
+// fastify.get("/car-condition", async (request, reply) => {
+//   return globalState;
+// });
+
+// const start = async () => {
+//   try {
+//     await fastify.listen({ port: 3000 });
+//   } catch (err) {
+//     fastify.log.error(err);
+//   }
+// };
+
+// async function apiStart() {
+//   const carCond = await main();
+//   start();
+// }
+
+// apiStart();
 for (;;) {
   main();
 }

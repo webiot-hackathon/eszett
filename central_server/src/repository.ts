@@ -24,7 +24,7 @@ export interface IntersectionSensorDto {
   macAddress: string;
   potisionCordinate: number[];
   // <carMacAddress, rssi[]>
-  rssiData: Map<string, number[]>;
+  rssiData: Map<string, number[] | undefined>;
 }
 
 /**
